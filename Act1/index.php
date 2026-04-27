@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700" type="text/css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <?php 
@@ -19,14 +21,12 @@
             <hr>
             <p>Email: <?= $email;?> | Phone: <?= $phoneNum; ?></p>
         </div>
+        <div class="about">
+            <h2>About Me</h2>
+                I am a front-end developer with limited experience
+            </div>
     </div>
 
-    <div class="main">
-        <div class="top-section">
-            <img src="profile.png" alt="" class="">
-            <p class="p1"></p>
-        </div>
-    </div>
     
     
 </body>
