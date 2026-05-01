@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css"">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="full-name">
-                <span class="first-name">Hannah Elisha</span>
-                <span class="last-name">Delos Santos</span>
-            </div>
-            <div class="contact-info">
-                <span class="email">Email:</span>
-                <span class="email-val">hadelossantos@fit.edu.ph</span>
-                <span class="seperator"></span>
-                <span class="phone">Phone: </span>
-                <span class="phone-val">+63 9324564324</span>
-            </div>
 
+    <!--Php Variables-->
+    <?php 
+        $firstName = "Hannah Elisha";
+        $lastName = "Delos Santos";
+        $email = "hadelossantos@fit.edu.ph";
+        $phone = "+63 9324564324";
+    ?>
+
+    <!--Enitre Resume Body-->
+    <div class="container">
+        <!--Profile Section/Header-->
+        <div class="header">
+            <!--Profile Details-->
+            <div class="header-top">
+
+                <!--Profile Image-->
+                <div class="profile">
+                    <img src="Resume_Profile.png" alt="Profile">
+                </div>
+                
+                <!--Personal Detailss-->
+                <div class="header-text">
+                    <div class="full-name">
+                        <span class="first-name"><?php echo $firstName; ?></span>
+                        <span class="last-name"><?= $lastName; ?></span>
+                    </div>
+                    <!--Contact Details-->
+                    <div class="contact-info">
+                        <span class="email">Email:</span>
+                        <span class="email-val"><?= $email; ?></span>
+                        <span class="seperator"></span>
+                        <span class="phone">Phone: </span>
+                        <span class="phone-val"><?= $phone; ?></span>
+                    </div>
+                </div>
             <div class="about">
                 <span class="position">Front-End Developer</span>
                 <span class="desc">

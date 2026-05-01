@@ -27,6 +27,8 @@ body {
     border-radius: 3px;
     padding: 40px;
     margin-top: 50px;
+    border-color: #ae85bc94;
+    border-style: solid;
 }
 
 .header {
@@ -34,7 +36,8 @@ body {
 }
 
 .header .full-name {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -147,4 +150,31 @@ body {
 
 .details .skills_item .right input:checked + label {
     background: #79A9CE;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    border-color: purple;
+    border-style: solid;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 220px;
+}
+
+.header .contact-info {
+    margin-top: 10px;
 }
