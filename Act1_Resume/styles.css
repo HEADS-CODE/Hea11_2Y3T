@@ -28,7 +28,7 @@ body {
     border-radius: 3px;
     padding: 40px;
     margin-top: 50px;
-    border-color: #ae85bc94;
+    border-color: rgba(128, 0, 128, 0.307);
     border-style: solid;
 }
 
@@ -55,32 +55,43 @@ body {
 
 .header .full-name {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header .first-name{
-    font-weight: 700;
-}
-
-.header .last-name{
+.header .first-name {
     font-weight: 300;
+}
+
+.header .last-name {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.header .middle-ini {
+    font-weight: 300;
+
 }
 
 .header .contact-info{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.header .contact-info .email-val, 
+.header .contact-info .phone-val {
+    opacity: 80%;
 }
 .header .email,
 .header .phone {
-    color: #999;
-    font-weight: 300;
+    color: purple;
+    font-weight: 500;
 }
 
 .header .seperator{
     height: 10px;
     display: inline-block;
-    border-left: 2px solid #999;
+    border-left: 1px solid purple;
     margin: 0px 10px;
 }
 
@@ -88,12 +99,21 @@ body {
     text-align: justify;
 }
 
-.header .position{
+.header hr {
+    font-size: 5px;
+    border: 1px solid #6608852e;
+    margin: 0px auto 10px;
+}
+
+.header .desc b{
+    font-size: 15px;
     font-weight: bold;
     display: inline-block;
-    margin-right: 10px;
+    color: purple;
     text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 .details{
     line-height: 20px;
@@ -108,11 +128,31 @@ body {
 }
 
 .details .section_title {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #54AFE4;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 30px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.project-list li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.project-list li strong {
+    font-weight: bold;
 }
 
 .details .section_list-item {
