@@ -50,7 +50,7 @@
     
     <!--PHP: Sample Use of Echo-->
     <div class="activityname">
-            <hr><?php echo "Welcome to $lastName's First Resume Php Activity :D" ?><hr>
+            <hr><?php echo "Welcome to $lastName' First Resume PHP Activity :D" ?><hr>
     </div> 
 
     <!--Enitre Resume Body-->
