@@ -159,6 +159,16 @@ body {
     margin-bottom: 40px;
 }
 
+.details .skills_list-item {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 30px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    text-align: justify;
+}
+
 .details .section__list-item:last-of-type {
   margin-bottom: 0;
 }
@@ -193,15 +203,15 @@ body {
     color: #000;
 }
 
-.details .skills_item {
+.details .languages_item {
     margin-bottom: 10px;
 }
 
-.details .skills_item .right input{
+.details .languages_item .right input{
     display: none;
 }
 
-.details .skills_item .right label {
+.details .languages_item .right label {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -210,8 +220,8 @@ body {
     margin-right: 3px;
 }
 
-.details .skills_item .right input:checked + label {
-    background: #79A9CE;
+.details .languages_item .right input:checked + label {
+    background: #237abd;
 }
 
 .header-top {
