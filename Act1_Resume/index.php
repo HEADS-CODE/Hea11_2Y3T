@@ -15,15 +15,22 @@
         $lastName = "Delos Santos";
         $email = "hadelossantos@fit.edu.ph";
         $phone = "+63 9324564324";
+
+        $position = "Full-Stack Web & Mobile Developer";
     ?>
+    
+    <!--1st Sample Use of Echo-->
+    <div class="activityname">
+            <hr><?php echo "Welcome to $lastName's First Resume Php Activity :D" ?><hr>
+    </div> 
 
     <!--Enitre Resume Body-->
     <div class="container">
+
         <!--Profile Section/Header-->
         <div class="header">
             <!--Profile Details-->
             <div class="header-top">
-
                 <!--Profile Image-->
                 <div class="profile">
                     <img src="Resume_Profile.png" alt="Profile">
@@ -44,10 +51,15 @@
                         <span class="phone-val"><?= $phone; ?></span>
                     </div>
                 </div>
+
+            <!--About Details-->
             <div class="about">
-                <span class="position">Front-End Developer</span>
+                <span class="position">Full-Stack Web & Mobile Developer</span>
                 <span class="desc">
-                    I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.
+                    <?php echo "I am a $position with the goal of having many years of experience writing HTML, CSS, and JavaScript 
+                    as a Web Developer. Including the process in mastering AndroidStudio's Kotlin for Mobile Development. 
+                    Seeks challenges as advantages to grow and develop. Carries a solution-focused minsdet for upcoming projects 
+                    and ideas. Dedicated in solving real-life problems utilizing web advancement & application development. " ?>
                 </span>
             </div>
         </div>
