@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Two-Digit Decimal Combination</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Two-Digit Decimal Combination :</h2>
-    <div class="output">
+    <hr>
+    <h2>Two-Digit Decimal Combination</h2>
+    <hr><div class="output">
         <?php
         $count = 0;
         for ($i = 0; $i <= 99; $i++) {
@@ -23,6 +24,6 @@
             }
         }
         ?>
-    </div>
+    <hr></div>
 </body>
 </html> 

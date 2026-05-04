@@ -1,7 +1,13 @@
 body { 
     font-family: Arial; 
-    margin: 30px; 
+    margin: 30px;
+    margin-left: 50px;
+    align-items: center;
 } 
+
+h2 {
+    text-align: center;
+}
 
 .output { 
     font-size: 18px; 
