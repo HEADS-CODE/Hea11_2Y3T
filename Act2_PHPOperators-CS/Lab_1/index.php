@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Measure Conversion Chart</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+</head>S
 <body>
-
 
 <?php
 
@@ -17,7 +16,6 @@
     echo "Date: $date". "<br>";
 
     echo "<h1>MEASURE CONVERSION CHART - LENGTHS (UK)</h1>";
-
 
 //Conversion data arrays
 $metric = [
