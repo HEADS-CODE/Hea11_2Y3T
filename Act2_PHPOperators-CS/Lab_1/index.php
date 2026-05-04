@@ -2,69 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Measure Conversion Chart - Lengths (UK)</title>
+    <title>Measure Conversion Chart</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>MEASURE CONVERSION CHART - LENGTHS (UK)</h1>
 
 <?php
-function createTable($title, $rows) {
-    echo "<table>";
-    echo "<tr><th colspan='4' class='section-title'>$title</th></tr>";
 
-    foreach ($rows as $row) {
-        echo "<tr>";
-        foreach ($row as $col) {
-            echo "<td>$col</td>";
-        }
-        echo "</tr>";
-    }
+    $name =  "Hannah Elisha A. Delos Santos";
+    $date = "May 4, 2026";
 
-    echo "</table><br>";
-}
+    echo "Name: $name" . "<br>";
+    echo "Date: $date". "<br>";
 
-// DATA
+    echo "<h1>MEASURE CONVERSION CHART - LENGTHS (UK)</h1>";
+
+
+//Conversion data arrays
 $metric = [
-    ["1 centimetre", "=", "10 millimetres", "1 cm = 10 mm"],
-    ["1 decimetre", "=", "10 centimetres", "1 dm = 10 cm"],
-    ["1 metre", "=", "100 centimetres", "1 m = 100 cm"],
-    ["1 kilometre", "=", "1000 metres", "1 km = 1000 m"]
+    ["1 centimetre", "=", (1 * 10) . " millimetres", "1 cm", "=", (1 * 10) . " mm"],
+    ["1 decimetre", "=", (1 * 10) . " centimetres", "1 dm", "=", (1 * 10) . " cm"],
+    ["1 metre", "=", (1 * 100) . " centimetres", "1 m", "=", (1 * 100) . " cm"],
+    ["1 kilometre", "=", (1 * 1000) . " metres", "1 km", "=", (1 * 1000) . " m"]
 ];
 
 $imperial = [
-    ["1 foot", "=", "12 inches", "1 ft = 12 in"],
-    ["1 yard", "=", "3 feet", "1 yd = 3 ft"],
-    ["1 chain", "=", "22 yards", "1 ch = 22 yd"],
-    ["1 furlong", "=", "220 yards", "1 fur = 220 yd"],
-    ["1 mile", "=", "1760 yards", "1 mi = 1760 yd"]
+    ["1 foot", "=", (1 * 12) . " inches", "1 ft", "=", (1 * 12) . " in"],
+    ["1 yard", "=", (1 * 3) . " feet", "1 yd", "=", (1 * 3) . " ft"],
+    ["1 chain", "=", (1 * 22) . " yards", "1 ch", "=", (1 * 22) . " yd"],
+    ["1 furlong", "=", (1 * 220) . " yards", "1 fur", "=", (1 * 220) . " yd (or 10 ch)"],
+    ["1 mile", "=", (1 * 1760) . " yards", "1 mi", "=", (1 * 1760) . " yd (or 8 fur)"]
 ];
 
 $metric_to_imp = [
-    ["1 millimetre", "=", "0.03937 inches", "1 mm = 0.03937 in"],
-    ["1 centimetre", "=", "0.39370 inches", "1 cm = 0.39370 in"],
-    ["1 metre", "=", "39.37008 inches", "1 m = 39.37008 in"],
-    ["1 metre", "=", "3.28084 feet", "1 m = 3.28084 ft"],
-    ["1 metre", "=", "1.09361 yards", "1 m = 1.09361 yd"],
-    ["1 kilometre", "=", "1093.6133 yards", "1 km = 1093.6133 yd"],
-    ["1 kilometre", "=", "0.62137 miles", "1 km = 0.62137 mi"]
+    ["1 millimetre", "=", (1 * 0.03937) . " inches", "1 mm", "=", (1 * 0.03937) . " in"],
+    ["1 centimetre", "=", (1 * 0.39370) . " inches", "1 cm", "=", (1 * 0.39370) . " in"],
+    ["1 metre", "=", (1 * 39.37008) . " inches", "1 m", "=", (1 * 39.37008) . " in"],
+    ["1 metre", "=", (1 * 3.28084) . " feet", "1 m", "=", (1 * 3.28084) . " ft"],
+    ["1 metre", "=", (1 * 1.09361) . " yards", "1 m", "=", (1 * 1.09361) . " yd"],
+    ["1 kilometre", "=", (1 * 1093.6133) . " yards", "1 km", "=", (1 * 1093.6133) . " yd"],
+    ["1 kilometre", "=", (1 * 0.62137) . " miles", "1 km", "=", (1 * 0.62137) . " mi"]
 ];
 
 $imp_to_metric = [
-    ["1 inch", "=", "2.54 centimetres", "1 in = 2.54 cm"],
-    ["1 foot", "=", "30.48 centimetres", "1 ft = 30.48 cm"],
-    ["1 yard", "=", "91.44 centimetres", "1 yd = 91.44 cm"],
-    ["1 yard", "=", "0.9144 metres", "1 yd = 0.9144 m"],
-    ["1 mile", "=", "1609.344 metres", "1 mi = 1609.344 m"],
-    ["1 mile", "=", "1.609344 kilometres", "1 mi = 1.609344 km"]
+    ["1 inch", "=", (1 * 2.54) . " centimetres", "1 in", "=", (1 * 2.54) . " cm"],
+    ["1 foot", "=", (1 * 30.48) . " centimetres", "1 ft", "=", (1 * 30.48) . " cm"],
+    ["1 yard", "=", (1 * 91.44) . " centimetres", "1 yd", "=", (1 * 91.44) . " cm"],
+    ["1 yard", "=", (1 * 0.9144) . " metres", "1 yd", "=", (1 * 0.9144) . " m"],
+    ["1 mile", "=", (1 * 1609.344) . " metres", "1 mi", "=", (1 * 1609.344) . " m"],
+    ["1 mile", "=", (1 * 1.609344) . " kilometres", "1 mi", "=", (1 * 1.609344) . " km"]
 ];
 
-// OUTPUT TABLES
-createTable("METRIC CONVERSIONS", $metric);
-createTable("IMPERIAL CONVERSIONS", $imperial);
-createTable("METRIC -> IMPERIAL CONVERSIONS", $metric_to_imp);
-createTable("IMPERIAL -> METRIC CONVERSIONS", $imp_to_metric);
+
+//METRIC
+echo "<table>";
+echo "<tr><th colspan='6' class='section-title'>METRIC CONVERSIONS</th></tr>";
+
+foreach ($metric as $row) {
+    echo "<tr>";
+    foreach ($row as $col) {
+        echo "<td>" . $col . "</td>";
+    }
+    echo "</tr>";
+}
+
+echo "</table><br>";
+
+
+//IMPERIAL
+echo "<table>";
+echo "<tr><th colspan='6' class='section-title'>IMPERIAL CONVERSIONS</th></tr>";
+
+foreach ($imperial as $row) {
+    echo "<tr>";
+    foreach ($row as $col) {
+        echo "<td>" . $col . "</td>";
+    }
+    echo "</tr>";
+}
+
+echo "</table><br>";
+
+
+//METRIC to IMPERIAL
+echo "<table>";
+echo "<tr><th colspan='6' class='section-title'>METRIC -> IMPERIAL CONVERSIONS</th></tr>";
+
+foreach ($metric_to_imp as $row) {
+    echo "<tr>";
+    foreach ($row as $col) {
+        echo "<td>" . $col . "</td>";
+    }
+    echo "</tr>";
+}
+
+echo "</table><br>";
+
+
+//IMPERIAL to METRIC
+echo "<table>";
+echo "<tr><th colspan='6' class='section-title'>IMPERIAL -> METRIC CONVERSIONS</th></tr>";
+
+foreach ($imp_to_metric as $row) {
+    echo "<tr>";
+    foreach ($row as $col) {
+        echo "<td>" . $col . "</td>";
+    }
+    echo "</tr>";
+}
+
+echo "</table><br>";
+
 ?>
 
 </body>
