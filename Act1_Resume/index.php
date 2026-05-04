@@ -27,6 +27,10 @@
         $schoolName = "";
         $schoolAddress = "";
 
+        //Experience
+        $expAddress = "";
+        $expDuration = "";
+
         //Languages
         $language1 = "HTML";
         $language2 = "CSS";
@@ -106,8 +110,8 @@
                     <div class="section_list-item">
                         <div class="left">
                             <div class="name"><?= $workExperience ?></div>
-                            <div class="addr">FTIC, FEU 5th Floor</div>
-                            <div class="duration">March 21, 2026</div>
+                            <div class="addr"><?= $expAddress = "FTIC, FEU 5th Floor" ?></div>
+                            <div class="duration"><?= $expDuration = "March 21, 2026" ?></div>
                         </div>
                         <div class="right">
                             <div class="name">Class Representative & <br>Best Poster Award</div>
@@ -118,8 +122,8 @@
                         <div class="left">
                             <!--PHP: Example of changing the variable's value.-->
                             <div class="name"><?= $workExperience = "PrajekPro: Navalta-Chavan Technologies Corp. " ?></div>
-                            <div class="addr">Makati High School (Remote)</div>
-                            <div class="duration">March 2024 - May 2024</div>
+                            <div class="addr"><?= $expAddress = "Makati High School (Remote)" ?></div>
+                            <div class="duration"><?= $expDuration = "March 2024 - May 2024" ?></div>
                         </div>
                         <div class="right">
                             <div class="name">SHS Work Immersion</div>
