@@ -44,6 +44,51 @@
             "name" => "Hannah",
             "age" => 20
         );
+
+        //Arrays
+        $arr_list[0] = "zero";
+        $arr_list[1] = "one";
+        $arr_list[2] = "two";
+        $arr_list[3] = "three";
+        for($i=0;$i<count($arr_list);$i++)
+            echo $arr_list[$i] . "<br/>";
+
+        //Objects
+        class Student{
+            private $_name;
+            function setName($name){
+                $this->_name = $name;
+            }
+            function getName(){
+                return $this->_name;
+            }
+        }
+        $stud = new Student;
+        $stud->setName('Roman');
+        echo $stud->getName();
+
+        //PHP Type Casting Operators
+        $x = (double) 8;
+        echo "<p>$x</p>";
+
+        $x = (int) 9.99;
+        echo "<p>$x</p>";
+        
+        $str = "19.00 pesos is the price";
+        $x = (int) $str;
+        echo "<p>$x</p>";
+
+        $x = (array) $str;
+        echo "<p>$x[0]</p>";
+
+        $obj = (object) $str;
+        echo "<p>$obj->scalar</p>";
+
+        //PHP Type Juggling
+        $a = "314e-2";
+        $b = 100;
+        $c = $a * $b;
+        echo "<p>$c</p>";
     ?>
 
     <div class="header">
