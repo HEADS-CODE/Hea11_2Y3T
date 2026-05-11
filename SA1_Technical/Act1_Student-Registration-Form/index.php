@@ -47,7 +47,7 @@
     $birthMM = 4;
     $birthDD = 27;
 
-    //Date Format
+    //Date Format - Had to look up on how to do this :D
     $birthDate = $birthYYYY . "-" .
                  str_pad($birthMM, 2, "0", STR_PAD_LEFT) . "-" .
                  str_pad($birthDD, 2, "0", STR_PAD_LEFT);
@@ -106,7 +106,6 @@
                 <div class="line-value">
                     <?= $schoolYearLevel; ?>
                 </div>
-
                 <div class="line-label">
                     Year
                 </div>
@@ -116,7 +115,6 @@
                 <div class="line-value">
                     <?= $schoolTerm; ?>
                 </div>
-
                 <div class="line-label">
                     Term
                 </div>
@@ -126,7 +124,6 @@
                 <div class="line-value">
                     <?= strtoupper($section); ?>
                 </div>
-
                 <div class="line-label">
                     Section
                 </div>
@@ -142,13 +139,11 @@
                 <input type="text"
                     value="<?= ucwords(strtolower($fName)); ?>">
             </div>
-
             <div class="form-group third">
                 <label>Middle Name</label>
                 <input type="text"
                     value="<?= ucwords(strtolower($mName)); ?>">
             </div>
-
             <div class="form-group third">
                 <label>Last Name</label>
                 <input type="text"
@@ -179,9 +174,7 @@
 
             <div class="form-group half">
                 <label>Department</label>
-
                 <select>
-
                     <option
                         <?php
                             if($department == "IT"){
@@ -191,10 +184,8 @@
                     >
                         IT
                     </option>
-
                     <option>Engineering</option>
                     <option>Business</option>
-
                 </select>
             </div>
 
@@ -202,7 +193,6 @@
                 <label>Course</label>
 
                 <select>
-
                     <option
                         <?php
                             if($course == "Web and Mobile Application"){
