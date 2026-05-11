@@ -3,7 +3,48 @@
 <head>
 
     <title>Multiplication Table</title>
+    <style>
+        
+        /*Body Design*/
+        body{
+            background-color: #eeeeee;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
 
+        /*Title Design*/
+        h1{
+            text-align: center;
+            font-size: 70px;
+        }
+
+        /*Table Design*/
+        table{
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        /*Table Cells*/
+        td{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 30px;
+            border: 3px solid gray;
+        }
+
+        /*First Color*/
+        .color1{
+            background-color: rgb(104, 19, 117);
+            color: white;
+        }
+
+        /*Second Color*/
+        .color2{
+            background-color: rgb(125, 21, 173);
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 
