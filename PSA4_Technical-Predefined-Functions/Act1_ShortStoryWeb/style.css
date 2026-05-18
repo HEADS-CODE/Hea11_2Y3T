@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.card a {
+    font-size: 20px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0 10px;
+    line-height: 1.4
+}
+
+.profile {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.profile p {
+    text-align: justify;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
