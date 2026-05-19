@@ -10,7 +10,7 @@
 
         //Fruit Data Records
         $fruits = array(
-            array("banana.png", "Banna", "Color Yellow", "Bananas are a healthful to a balanced diet,as they provide a range of vital nutrients and are a good source of fiber."),
+            array("banana.png", "Banana", "Color Yellow", "Bananas are a healthful to a balanced diet,as they provide a range of vital nutrients and are a good source of fiber."),
             array("apple.png", "Apple", "Color Red", "Apples are rich in fiber and vitamin C, making them a healthy snack that supports heart health."),
             array("orange.png", "Orange", "Color Orange", "Oranges are a great source of vitamin C and help boost the immune system."),
             array("grape.png", "Grapes", "Color Purple/Green", "Grapes contain antioxidants that support heart health and may reduce inflammation."),
@@ -25,5 +25,34 @@
         //Sort Fruits in alphabetical order
         sort($fruits);
     ?>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th colspan="4">My Fruits</th>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Facts</th>
+            </tr>
+
+            <?php
+            
+            //For Loop to display fruit values
+            foreach ($fruits as $fruit){
+                echo "<tr>";
+                echo "<td><img src='images/" . $fruit[0] . "'></td>";
+                echo "<td>" . $fruit[1] . "</td>";
+                echo "<td>" . $fruit[2] . "</td>";
+                echo "<td>" . $fruit[3] . "</td>";
+                echo "</tr>";
+            }
+            
+            ?>
+
+        </table>
+    </div>
 </body>
 </html>
