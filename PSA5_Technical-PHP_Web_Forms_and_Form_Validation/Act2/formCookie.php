@@ -41,6 +41,19 @@ if (isset($_GET['submit'])) {
             font-family: 'Readex Pro', sans-serif;
         }
 
+        /*Gengar Image */
+        body::after {
+            content: "";
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 450px;
+            height: 450px;
+            background: url('image/gengar.png') no-repeat;
+            background-size: contain;
+            opacity: 0.4;
+        }
+        
         .main-box {
             background: white;
             border-radius: 15px;
@@ -83,7 +96,8 @@ if (isset($_GET['submit'])) {
                             <input type="text" name="dofb" class="form-control mb-3" placeholder="Date of Birth">
                             <input type="text" name="address" class="form-control mb-3" placeholder="Address">
 
-                            <button type="submit" name="submit" class="btn btn-primary w-100">
+                            <button style="background: #7a4bff" type="submit" name="submit"
+                                class="btn btn-primary w-100">
                                 Submit
                             </button>
                         </form>
@@ -113,4 +127,5 @@ if (isset($_GET['submit'])) {
         </div>
     </div>
 </body>
+
 </html>
