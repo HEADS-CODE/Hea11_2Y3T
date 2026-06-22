@@ -17,7 +17,7 @@ if (isset($_POST['save'])) {
     if (mysqli_query($conn, $sql)) {
         echo "<script>alert('New dog record created successfully!'); </script>";
     } else {
-        echo "Error: " . sql . "<br>" . mysqli_error($conn);
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
 ?>
