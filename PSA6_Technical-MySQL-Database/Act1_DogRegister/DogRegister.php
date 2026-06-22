@@ -102,19 +102,19 @@ if (isset($_POST['save'])) {
                 </div>
                 <div class="form-group">
                     <label>Address</label>
-                    <input type="text" name="Address" required>
+                    <input type="text" name="address" required>
                 </div>
                 <div class="form-group">
                     <label>Color</label>
-                    <input type="text" name="Color" required>
+                    <input type="text" name="color" required>
                 </div>
                 <div class="form-group">
                     <label>Height</label>
-                    <input type="text" name="Height" required>
+                    <input type="text" name="height" required>
                 </div>
                 <div class="form-group">
                     <label>Weight</label>
-                    <input type="text" name="Weight" required>
+                    <input type="text" name="weight" required>
                 </div>
                 <button type="submit" name="save">save</button>
             </form>
