@@ -21,3 +21,49 @@
         }
     }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Registration</title>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Dog Information</h3>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Breed</label>
+                <input type="text" name="breed" required>
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" name="age" required>
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" name="Address" required>
+            </div>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="text" name="Color" required>
+            </div>
+            <div class="form-group">
+                <label>Height</label>
+                <input type="text" name="Height" required>
+            </div>
+            <div class="form-group">
+                <label>Weight</label>
+                <input type="text" name="Weight" required>
+            </div>
+            <button type="submit" name="save">save</button>
+        </form>
+        <div class="footer">@ Dog Registration by <b>Hannah Elisha A. Delos Santos</b></div>
+    </div>
+</body>
+</html>
